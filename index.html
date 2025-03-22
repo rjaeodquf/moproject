@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>cepoLAB</title>
+  <link type="text/css" rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="text/javascript" src="js/code.jquery.com_jquery-3.7.0.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="head">
+        <h1><a href="index.html"><img src="img/logo_h.jpg"></a></h1>
+        <div class="btn-box">
+          <button class=""><img src="img/qr_btn_img_03.png"></button>
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="active"><a href="#none">Home</a></li>
+          <li><a href="#none">Shop</a></li>
+          <li><a href="#none">Instagram</a></li>
+          <li><a href="#none">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="close2" class="content close">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/img2.jpg">
+            <div class="btn-box">
+              <button>more</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img1.jpg">
+            <div class="btn-box">
+              <button>more</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 10,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+            },
+          });
+        </script>
+    </div>
+    <div  id="myModal02" class="footer active">
+      <div class="banner">
+        <img src="img/banner_img_06.png">
+      </div>
+      <button class=" close-modalPopup" onclick="closeModal1();"><img src="img/x-ico.png"></button>
+      <script>
+        let modal2 = document.getElementById('myModal02');
+        function openModal1() {
+				modal2.classList.add('active')
+        }
+
+        function closeModal1() {
+				modal2.classList.remove('active')
+        close2.classList.remove('close')
+      }
+      </script>
+    </div>
+  </div>
+</body>
+</html>
