@@ -42,6 +42,18 @@
               <button>more</button>
             </div>
           </div>
+          <div class="swiper-slide">
+            <img src="img/img2.jpg">
+            <div class="btn-box">
+              <button>more</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img1.jpg">
+            <div class="btn-box">
+              <button>more</button>
+            </div>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -57,6 +69,12 @@
             pagination: {
               el: ".swiper-pagination",
               type: "fraction",
+              renderBullet : function (index, className) {  // className이 기본값이 들어가게 필수 설정
+            return '<a href="#" class="' + className + '">' + (index + 1) + '</a>'
+              },
+              renderFraction: function (currentClass, totalClass) { // type이 fraction일 때 사용
+                  return '<span class="' + currentClass + '"></span> ' + '<strong>&#8739;</strong> ' + '<span class="' + totalClass + '"></span>';
+              }
             },
           });
         </script>
