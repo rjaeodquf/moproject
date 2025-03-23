@@ -29,8 +29,8 @@ body {/*background-color: aqua !important;*/}
 .content .swiper .swiper-wrapper {height:100%;}
 .content .swiper .swiper-wrapper .swiper-slide {width:304px;height:auto;border-radius: 24px; overflow: hidden;position: relative;}
 .content .swiper .swiper-wrapper .swiper-slide .btn-box{width:123px;position: absolute;bottom:23px;left: 50%;transform: translate(-50%, 0%);}
-.content .swiper .swiper-wrapper .swiper-slide .btn-box button {width: 100%;padding:15px 35px  17px 35px;color: #fff;background-color: rgba(51, 51, 51, 0.3);border:1px solid #fff;border-radius: 50px;font-weight: 300;    line-height: 0.6;font-size: 18px;position: relative;text-align: left;font-weight: 400;}
-.content .swiper .swiper-wrapper .swiper-slide .btn-box button::after {content: "";background: url('../img/right_ico.png') no-repeat;position: absolute;width:7px;height:12px;top:17px;right:30px}
+.content .swiper .swiper-wrapper .swiper-slide .btn-box button {width: 100%;padding:14px 35px  18px 33px;color: #fff;background-color: rgba(51, 51, 51, 0.3);border:1px solid #fff;border-radius: 50px;font-weight: 300;    line-height: 0.6;font-size: 18px;position: relative;text-align: left;font-weight: 400;}
+.content .swiper .swiper-wrapper .swiper-slide .btn-box button::after {content: "";background: url('../img/right_ico.png') no-repeat;position: absolute;width:7px;height:12px;top:16px;right:28px}
 
 .content .swiper .swiper-wrapper .swiper-slide .btn-box button:hover {background-color: rgba(51, 51, 51, 0.8);}
 .swiper-pagination {width:51px!important;height:21px;border-radius: 10px;background-color:#80807f ;color:#fff !important;font-size: 14.85px;
