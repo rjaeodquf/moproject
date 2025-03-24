@@ -32,7 +32,7 @@ body {/*background-color: aqua !important;*/}
 .nav .mySwiper .swiper-slide-thumb-active  .button:before{
   content: ""; position: absolute; background-color: #000;border-radius: 10px;height: 3px;width: 100%;bottom: 0;transition: 0.3s;left: 50%;transform: translateX(-50%);
 }
-.nav .swiper_style .li {width: 0;}
+.nav .swiper_style .button:before {width: 0;}
 
 /* .content {height:auto;min-height: 449px;max-height: 100%;margin:20px 0;position: relative;} */
 .content {/*max-height: 449px;*/height: calc(100% - 93px - 40px);min-height:449px;margin:20px 0;position: relative;}
