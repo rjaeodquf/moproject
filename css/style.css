@@ -23,7 +23,7 @@ body {/*background-color: aqua !important;*/}
 .nav .swiper_style li {height:100%}
 .nav .swiper_style .li .button {height:100%;color: #777;font-size:18px;position: relative;padding:8px 0px 0 0px;display: block;text-align: center;cursor: pointer;font-weight: 400;}
 /* .nav .swiper_style .li.active .button:before {width: 100%;} */
-.nav .swiper_style .li .button:before { content: ""; position: absolute; background-color: #000;border-radius: 10px;height: 3px;width: 0px;bottom: 0;transition: 0.3s;left: 50%;transform: translateX(-50%);}
+/* .nav .swiper_style .li .button:before { content: ""; position: absolute; background-color: #000;border-radius: 10px;height: 3px;width: 0px;bottom: 0;transition: 0.3s;left: 50%;transform: translateX(-50%);} */
 .nav .swiper_style .li .button:hover:before {
   width: 100%;
 }
