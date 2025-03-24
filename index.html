@@ -22,12 +22,6 @@
         </div>
       </div>
       <div class="nav">
-        <!-- <ul>
-          <li class="active"><a href="#none">Home</a></li>
-          <li><a href="#none">Shop</a></li>
-          <li><a href="#none">Instagram</a></li>
-          <li><a href="#none">Youtube</a></li>
-        </ul> -->
         <div thumbsSlider="" class="swiper mySwiper swiper_style">
           <div class="swiper-wrapper">
             <div class="swiper-slide li">
@@ -85,10 +79,10 @@
         <script>
          
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
-       });
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
 
        var swiper2 = new Swiper(".mySwiper2", {
           slidesPerView: "auto",
@@ -98,20 +92,16 @@
               delay: 1500,
               disableOnInteraction: false,
           },
-        // watchSlidesProgress: true,
         pagination: {
           el: ".swiper-pagination",
           type: "fraction",
-          renderBullet : function (index, className) {  // className이 기본값이 들어가게 필수 설정
-        return '<a href="#" class="' + className + '">' + (index + 1) + '</a>'
-          },
           renderFraction: function (currentClass, totalClass) { // type이 fraction일 때 사용
               return '<span class="' + currentClass + '"></span> ' + '<strong>&#8739;</strong> ' + '<span class="' + totalClass + '"></span>';
           }
         },
-        thumbs: {
-        swiper: swiper,
-      },
+          thumbs: {
+          swiper: swiper,
+        },
       });
         </script>
     </div>
@@ -122,14 +112,13 @@
       <button class=" close-modalPopup" onclick="closeModal1();"><img src="img/x-ico.png"></button>
       <script>
         let modal2 = document.getElementById('myModal02');
-        function openModal1() {
-				modal2.classList.add('active')
-        }
+        function openModal1() {modal2.classList.add('active')}
 
         function closeModal1() {
-				modal2.classList.remove('active')
-        close2.classList.remove('close')
-      }
+          //배너 닫기
+          modal2.classList.remove('active')
+          //배너 닫힐때 메인배너 사이즈 조정
+          close2.classList.remove('close')}
       </script>
     </div>
   </div>
