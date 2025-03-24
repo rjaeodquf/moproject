@@ -22,17 +22,34 @@
         </div>
       </div>
       <div class="nav">
-        <ul>
+        <!-- <ul>
           <li class="active"><a href="#none">Home</a></li>
           <li><a href="#none">Shop</a></li>
           <li><a href="#none">Instagram</a></li>
           <li><a href="#none">Youtube</a></li>
-        </ul>
+        </ul> -->
+        <div thumbsSlider="" class="swiper mySwiper swiper_style">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide li">
+              <div class="button">Home</div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="button">Shop</div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="button">Instagram</div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="button">Youtube</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     <div id="close2" class="content close">
       <!-- Swiper -->
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="img_box"><img src="img/img2.jpg"></div>
@@ -66,25 +83,36 @@
 
         <!-- Initialize Swiper -->
         <script>
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: 10,
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              type: "fraction",
-              renderBullet : function (index, className) {  // className이 기본값이 들어가게 필수 설정
-            return '<a href="#" class="' + className + '">' + (index + 1) + '</a>'
-              },
-              renderFraction: function (currentClass, totalClass) { // type이 fraction일 때 사용
-                  return '<span class="' + currentClass + '"></span> ' + '<strong>&#8739;</strong> ' + '<span class="' + totalClass + '"></span>';
-              }
-            },
-          });
+         
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+       });
+
+       var swiper2 = new Swiper(".mySwiper2", {
+          slidesPerView: "auto",
+          centeredSlides: true,
+          spaceBetween: 10,
+        // autoplay: {
+        //     delay: 1500,
+        //     disableOnInteraction: false,
+        // },
+        // watchSlidesProgress: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+          renderBullet : function (index, className) {  // className이 기본값이 들어가게 필수 설정
+        return '<a href="#" class="' + className + '">' + (index + 1) + '</a>'
+          },
+          renderFraction: function (currentClass, totalClass) { // type이 fraction일 때 사용
+              return '<span class="' + currentClass + '"></span> ' + '<strong>&#8739;</strong> ' + '<span class="' + totalClass + '"></span>';
+          }
+        },
+        thumbs: {
+        swiper: swiper,
+      },
+      });
         </script>
     </div>
     <div  id="myModal02" class="footer active">

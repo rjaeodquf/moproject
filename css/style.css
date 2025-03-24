@@ -1,6 +1,6 @@
 /* body{width: 100%;height:100%;} */
 body {/*background-color: aqua !important;*/}
-.container{max-width: 360px;height:100%;box-sizing:border-box;margin:0 auto;position: relative;background-color: #fff;}
+.container{max-width: 360px;height:100%;box-sizing:border-box;margin:0 auto;position: relative;background-color: #fff;overflow: hidden;}
 .header {width:100%;}
 .header .head {width:100%;height:48px;border-bottom:1px solid #f0f2f3;display: flex
   ;-webkit-box-pack: justify;justify-content: space-between;padding: 0px 14px 0 17px;z-index: 510;align-items: center}
@@ -9,7 +9,7 @@ body {/*background-color: aqua !important;*/}
 .header .btn-box {width: 106px;height:35px;}
 .header .btn-box button {width:100%;height: 100%;background-color:#efefef ;color:#535353;font-size: 15px;border:1px solid #dcdcdc;border-radius: 30px;font-weight: 500;}
 .nav {height:45px;border-bottom:1px solid #f0f2f3;display: flex;justify-content: center}
-.nav ul {display: flex; width: 100%; flex-wrap: nowrap; align-items: center; height: 100%;justify-content: center}
+/* .nav ul {display: flex; width: 100%; flex-wrap: nowrap; align-items: center; height: 100%;justify-content: center}
 .nav ul li {height:100%}
 .nav ul li a {color: #777;font-size:18px;position: relative;padding:8px 11px 0 11px;display: block;}
 .nav ul li.active a:before {width: 100%;}
@@ -17,8 +17,16 @@ body {/*background-color: aqua !important;*/}
 .nav ul li a:hover:before {
   width: 100%;
 }
-.nav ul li.active a {color: #333 !important;font-weight: 700;}
-
+.nav ul li.active a {color: #333 !important;font-weight: 700;} */
+.nav .swiper_style {display: flex; width: 100%; flex-wrap: nowrap; align-items: center; height: 100%;justify-content: center}
+.nav .swiper_style li {height:100%}
+.nav .swiper_style .li .button {height:100%;color: #777;font-size:18px;position: relative;padding:8px 0px 0 0px;display: block;text-align: center;cursor: pointer;}
+.nav .swiper_style .li.active .button:before {width: 100%;}
+.nav .swiper_style .li .button:before { content: ""; position: absolute; background-color: #000;border-radius: 10px;height: 3px;width: 0px;bottom: 0;transition: 0.3s;left: 50%;transform: translateX(-50%);}
+.nav .swiper_style .li .button:hover:before {
+  width: 100%;
+}
+.nav .swiper_style .li.active .button {color: #333 !important;font-weight: 700;}
 
 
 
