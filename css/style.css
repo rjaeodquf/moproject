@@ -6,6 +6,8 @@ body {/*background-color: aqua !important;*/}
   ;-webkit-box-pack: justify;justify-content: space-between;padding: 0px 14px 0 17px;z-index: 510;align-items: center}
 .header h1 {width:95px;height:24px;display: flex;}
 .header .btn-box {margin:0 0 0 14px}
+.header .btn-box {width: 106px;height:35px;}
+.header .btn-box button {width:100%;height: 100%;background-color:#efefef ;color:#535353;font-size: 15px;border:1px solid #dcdcdc;border-radius: 30px;font-weight: 500;}
 .nav {height:45px;border-bottom:1px solid #f0f2f3;display: flex;justify-content: center}
 .nav ul {display: flex; width: 100%; flex-wrap: nowrap; align-items: center; height: 100%;justify-content: center}
 .nav ul li {height:100%}
@@ -31,6 +33,12 @@ body {/*background-color: aqua !important;*/}
 .content .swiper .swiper-wrapper .swiper-slide .btn-box{width:123px;position: absolute;bottom:23px;left: 50%;transform: translate(-50%, 0%);}
 .content .swiper .swiper-wrapper .swiper-slide .btn-box button {width: 100%;padding:14px 35px  18px 33px;color: #fff;background-color: rgba(51, 51, 51, 0.3);border:1px solid #fff;border-radius: 50px;font-weight: 300;    line-height: 0.6;font-size: 18px;position: relative;text-align: left;font-weight: 400;}
 .content .swiper .swiper-wrapper .swiper-slide .btn-box button::after {content: "";background: url('../img/right_ico.png') no-repeat;position: absolute;width:7px;height:12px;top:16px;right:28px}
+.content .swiper .swiper-wrapper .swiper-slide .img_box {border-radius: 24px!important;width:100%;height:100%;overflow: hidden;transition: 0.3s ease-out;}
+/* .content .swiper .swiper-wrapper .swiper-slide.swiper-slide-active .img_box  {transform: scale(1) translateX(0);} */
+.content .swiper .swiper-wrapper .swiper-slide.swiper-slide-next .img_box {position: relative;;border-radius: 24px !important;transform: scale(.9) translateX(calc(-1.8% - 8px));
+  transition: transform .25s ease-in;will-change: transform;}
+.content .swiper .swiper-wrapper .swiper-slide.swiper-slide-prev .img_box {position: relative;;border-radius: 24px !important;transform: scale(.9) translateX(calc(6.8% - 8px));
+    transition: transform .25s ease-in;will-change: transform;}
 
 .content .swiper .swiper-wrapper .swiper-slide .btn-box button:hover {background-color: rgba(51, 51, 51, 0.8);}
 .swiper-pagination {width:51px!important;height:21px;border-radius: 10px;background-color:#80807f ;color:#fff !important;font-size: 14.85px;
