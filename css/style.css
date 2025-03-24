@@ -36,8 +36,8 @@ body {/*background-color: aqua !important;*/}
 
 
 /* .content {height:auto;min-height: 449px;max-height: 100%;margin:20px 0;position: relative;} */
-.content {/*max-height: 449px;*/height: calc(100% - 93px - 40px);min-height:449px;margin:20px 0;position: relative;}
-.content.close {height: calc(100% - 54px - 93px - 40px);min-height:336px;;}
+.content {/*max-height: 449px;*/height: calc(100% - 93px - 40px);min-height:250px;margin:20px 0;position: relative;}
+.content.close {height: calc(100% - 54px - 93px - 40px);min-height:250px;;}
 
 .content .btn-box {position: absolute;}
 .content .swiper {/*width:304px;*/height:100%;}
